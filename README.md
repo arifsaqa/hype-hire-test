@@ -2,9 +2,13 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+Probably need to run```bash
+npm i --legacy-peer-deps
+```, because react-slict isn't support the latest react/next version yet
 First, run the development server:
 
 ```bash
+npm run dev
 npm run dev
 # or
 yarn dev
