@@ -5,7 +5,7 @@ import BottomSliders from './components/Organisms/BottomSliders';
 import { User } from '@/types';
 
 export default async function Home() {
-  const res = await fetch('http://localhost:3000/api/users');
+  const res = await fetch('http://localhost:3000/api/users', { cache: 'no-store' });
   const data = await res.json();
   const users = data.data as Array<User>;
 
@@ -33,9 +33,7 @@ export default async function Home() {
             <p className="font-black text-5xl mt-0.5">외국인 인재를 찾고 계신가요?</p>
           </div>
           <div className="row-span-3">
-            <div className="w-full min-h-[26rem]">
-              <UserCardList userList={users} />
-            </div>
+            <UserCardList userList={users} />
           </div>
           <div className="col">
             <p className="font-black text-2xl">법률 및 인사관리 부담없이 1주일 이내에 원격으로 채용해보세요.</p>
