@@ -3,9 +3,10 @@ import { BaseIconProps, Direction } from './types';
 
 type ChevronProps = BaseIconProps & {
   direction?: Direction;
+  className?: string;
 };
 
-export const Chevron = ({ size = 16, color = 'white', direction = 'down' }: Partial<ChevronProps>) => {
+export const Chevron = ({ size = 16, color = 'white', direction = 'down', className }: Partial<ChevronProps>) => {
   let translate = '';
 
   switch (direction) {
@@ -26,7 +27,7 @@ export const Chevron = ({ size = 16, color = 'white', direction = 'down' }: Part
       width={size}
       height={size}
       viewBox="0 0 16 16"
-      className={translate}
+      className={className + ' ' + translate}
       fill="none"
       xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0_9218_34)">
