@@ -6,9 +6,9 @@ import { User } from '@/types';
 
 const UserCard = ({ id, name, avatarUrl, flagUrl, subTitle }: User) => {
   const classNames = [
-    'left-[7%] scale-90',
-    'left-1/2 -translate-x-1/2 z-10',
-    'right-[7%] scale-90',
+    'md:left-[7%] scale-90 max-w-sm',
+    'right-1/2 translate-x-1/2 z-10 min-w-72 md:max-w-sm',
+    'right-0 md:right-[7%] scale-90 max-w-sm',
   ];
 
   return (

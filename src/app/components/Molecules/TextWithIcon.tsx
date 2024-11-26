@@ -9,7 +9,7 @@ type Props = {
 const TextWithIcon = ({ Icon, textContent, className }: Props) => {
   return (
     <div className={'flex ' + className}>
-      <Text content={textContent} />
+      <Text content={textContent} className='text-sm'/>
       <Icon />
     </div>
   );

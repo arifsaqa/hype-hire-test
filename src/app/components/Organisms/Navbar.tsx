@@ -12,7 +12,7 @@ const Navbar = () => {
           <Logo />
           <span className="font-black">hyperhire</span>
         </li>
-        <li className="flex gap-4">
+        <li className="md:flex gap-4 hidden ">
           <TextWithIcon Icon={Chevron} textContent="채용" />
           <a href="/#" className="font-black">
             해외 개발자 활용 서비스
