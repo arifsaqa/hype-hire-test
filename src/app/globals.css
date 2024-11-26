@@ -16,7 +16,7 @@
 }
 
 body {
-  color: var(--foreground);
+  color: #ffffff;
   font-family: var(--font-poppin), Helvetica, sans-serif;
 }
 
