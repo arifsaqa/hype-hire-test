@@ -5,7 +5,7 @@ import { User } from '@/types';
 import Footer from './components/Organisms/Footer';
 
 export default async function Home() {
-  const res = await fetch('http://localhost:3000/api/users', { cache: 'no-store' });
+  const res = await fetch(process.env.NEXT_PUBLIC_BASE_URL + '/api/users', { cache: 'no-store' });
   const data = await res.json();
   const users = data.data as Array<User>;
 
