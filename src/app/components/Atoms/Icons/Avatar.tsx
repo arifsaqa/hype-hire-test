@@ -1,7 +1,7 @@
 import React from 'react';
 import { BaseIconProps } from './types';
 
-export const Avatar = ({ size = 24, color = "#7A8FAD" }: BaseIconProps) => {
+export const Avatar = ({ size = 24, color = '#7A8FAD' }: BaseIconProps) => {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path

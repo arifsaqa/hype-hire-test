@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Navbar from './components/Organisms/Navbar';
 import UserCardList from './components/Organisms/UserCardList';
 import BottomSliders from './components/Organisms/BottomSliders';

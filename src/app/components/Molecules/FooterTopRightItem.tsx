@@ -1,5 +1,4 @@
 import React from 'react';
-import { Code } from '../Atoms/Icons';
 import Text from '../Atoms/Text';
 import TextWithIcon from './TextWithIcon';
 
@@ -30,7 +29,7 @@ const FooterTopRightItem = ({ Icon, title, subtitle }: { Icon: JSX.ElementType; 
   return (
     <div>
       <div className="rounded-lg p-2 bg-slate-100 inline-block">
-        <Icon color='#7388A9'/>
+        <Icon color="#7388A9" />
       </div>
       <Text className="text-sm text-zinc-700 mt-2" content={title} />
 

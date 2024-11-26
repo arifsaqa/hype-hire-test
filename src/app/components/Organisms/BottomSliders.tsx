@@ -15,7 +15,7 @@ const BottomSliders = () => {
   return (
     <Slider autoplay speed={500} variableWidth arrows={false}>
       {datas.map((data, idx) => (
-        <div key={idx} className='mx-2'>
+        <div key={idx} className="mx-2">
           <BottomItem {...data} />
         </div>
       ))}

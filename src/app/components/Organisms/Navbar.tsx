@@ -3,6 +3,7 @@ import { Chevron } from '@/app/components/Atoms/Icons';
 import Button from '@/app/components/Atoms/Button';
 import Logo from '@/app/components/Atoms/Logo';
 import TextWithIcon from '@/app/components/Molecules/TextWithIcon';
+import Link from 'next/link';
 
 const Navbar = () => {
   return (
@@ -14,12 +15,14 @@ const Navbar = () => {
         </li>
         <li className="md:flex gap-4 hidden ">
           <TextWithIcon Icon={Chevron} textContent="채용" />
-          <a href="/#" className="font-black">
+          <Link href="/" className="font-black">
             해외 개발자 활용 서비스
-          </a>
+          </Link>
         </li>
         <li>
-          <Button variant="filled-dogger" className='px-3 py-1'>문의하기</Button>
+          <Button variant="filled-dogger" className="px-3 py-1">
+            문의하기
+          </Button>
         </li>
       </ul>
     </nav>

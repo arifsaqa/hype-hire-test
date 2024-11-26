@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React, { ButtonHTMLAttributes } from 'react';
 
 type ButtonVariant = 'filled-dogger' | 'outlined';

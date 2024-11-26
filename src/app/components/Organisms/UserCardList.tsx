@@ -7,11 +7,11 @@ import { Chevron } from '../Atoms/Icons';
 const UserCardList = ({ userList }: { userList: Array<User> }) => {
   return (
     <div className="relative w-full min-h-[26rem]">
-      <Chevron className="top-1/2 -left-2 md:left-5 absolute cursor-pointer" size={25} direction='left'/>
+      <Chevron className="top-1/2 -left-2 md:left-5 absolute cursor-pointer" size={25} direction="left" />
       {userList.map((user) => (
         <UserCard {...user} key={user.id} />
       ))}
-      <Chevron className="top-1/2 -right-2 md:right-5 absolute cursor-pointer" size={25} direction='right'/>
+      <Chevron className="top-1/2 -right-2 md:right-5 absolute cursor-pointer" size={25} direction="right" />
     </div>
   );
 };
