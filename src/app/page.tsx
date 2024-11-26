@@ -17,7 +17,7 @@ export default async function Home() {
           <div className="md:grid md:grid-cols-2 md:grid-rows-4 gap-2 py-16">
             <div className="">
               <div className="relative flex items-center justify-start mb-5">
-                <div className="relative z-10 w-32 p-2 -mt-1 text-sm leading-tight text-[#40E2E8] transform bg-white rounded-lg shadow-lg">
+                <div className="relative z-10 w-32 p-2 -mt-1 text-sm leading-tight text-[#40E2E8] transform bg-white rounded-lg shadow-lg animate__animated animate__fadeInUp custom-delay">
                   풀타임, 파트타임
                   <svg
                     className="absolute z-10 w-6 h-6 text-white transform fill-current stroke-current"
@@ -27,18 +27,18 @@ export default async function Home() {
                   </svg>
                 </div>
               </div>
-              <div className="relative z-30 inline-flex font-black text-5xl">
+              <div className="relative z-30 inline-flex font-black text-5xl animate__animated animate__fadeInUp">
                 <p>최 최고의 실력을 가진 외국인 인재를 찾고 계신가요?</p>
               </div>
             </div>
-            <div className="md:row-span-3 my-3 md:my-0">
+            <div className="md:row-span-3 my-3 md:my-0 animate__animated animate__fadeIn">
               <UserCardList userList={users} />
             </div>
-            <div className="col">
+            <div className="col animate__animated animate__fadeInUp">
               <p className="font-black text-2xl">법률 및 인사관리 부담없이 1주일 이내에 원격으로 채용해보세요.</p>
               <p className="underline text-lg mt-4">개발자가 필요하신가요?</p>
             </div>
-            <div className="hidden md:flex gap-8">
+            <div className="hidden md:flex gap-8 animate__animated animate__fadeIn">
               <div className="max-w-44">
                 <hr className="w-40" />
                 <p className="font-black text-lg mt-4">평균 월 120만원</p>
@@ -55,7 +55,7 @@ export default async function Home() {
                 <p className="text-base">급하게 사람이 필요한 경우에도 빠른 채용이 가능합니다.</p>
               </div>
             </div>
-            <div className="col-span-2 mt-3 md:mt-0">
+            <div className="col-span-2 mt-3 md:mt-0 animate__animated animate__fadeIn">
               <BottomSliders />
             </div>
           </div>
